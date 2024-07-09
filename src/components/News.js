@@ -24,7 +24,7 @@ export default function News(props) {
 
     const fetchData = async (p, isInitial = false) => {
 
-        let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=ad8b43b6e80b412eaa2a0af44abbd21c&page=${p}&pageSize=${pageSize}`;
+        let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=3705a1cedf15419caaa898fb5f01a905&page=${p}&pageSize=${pageSize}`;
         try {
             setloading(true);
             updateProgress(0)
