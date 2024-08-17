@@ -29,11 +29,11 @@ export default function News(props) {
             setloading(true);
             updateProgress(0)
             const response = await fetch(url);
-            updateProgress(30)                                     // updateProgress(30)
-            if (!response.ok) {
+            updateProgress(30)  
+            const parsedData = await response.json();
+            if (parsedData.status!=="ok") {
                 throw new Error('Network response was not ok');
             }
-            const parsedData = await response.json();
             if (parsedData.totalResults) settotalResults(parsedData.totalResults);
             updateProgress(70)
             if (!isInitial) setarticle((prevArticles) => [...prevArticles, ...parsedData.articles]);
