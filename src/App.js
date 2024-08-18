@@ -27,13 +27,13 @@ function App() {
         shadow = {true}
       />
       <Routes>
-        <Route path="/" element={<News apikey={apiKey} updateProgress = {updateProgress} key="general" pageSize={5} country="in" category="general" />} />
-        <Route path="/business" element={<News apikey={apiKey} updateProgress = {updateProgress} key="business" pageSize={5} country="in" category="business" />} />
-        <Route path="/entertainment" element={<News apikey={apiKey} updateProgress = {updateProgress} key="entertainment" pageSize={5} country="in" category="entertainment" />} />
-        <Route path="/health" element={<News apikey={apiKey} updateProgress = {updateProgress} key="health" pageSize={5} country="in" category="health" />} />
-        <Route path="/science" element={<News apikey={apiKey} updateProgress = {updateProgress} key="science" pageSize={5} country="in" category="science" />} />
-        <Route path="/sports" element={<News apikey={apiKey} updateProgress = {updateProgress} key="sports" pageSize={5} country="in" category="sports" />} />
-        <Route path="/technology" element={<News apikey={apiKey} updateProgress = {updateProgress} key="technology" pageSize={5} country="in" category="technology" />} />
+        <Route path="/" element={<News apikey={apiKey} updateProgress = {updateProgress} key="general" pageSize={10} country="in" category="general" />} />
+        <Route path="/business" element={<News apikey={apiKey} updateProgress = {updateProgress} key="business" pageSize={10} country="in" category="business" />} />
+        <Route path="/entertainment" element={<News apikey={apiKey} updateProgress = {updateProgress} key="entertainment" pageSize={10} country="in" category="entertainment" />} />
+        <Route path="/health" element={<News apikey={apiKey} updateProgress = {updateProgress} key="health" pageSize={10} country="in" category="health" />} />
+        <Route path="/science" element={<News apikey={apiKey} updateProgress = {updateProgress} key="science" pageSize={10} country="in" category="science" />} />
+        <Route path="/sports" element={<News apikey={apiKey} updateProgress = {updateProgress} key="sports" pageSize={10} country="in" category="sports" />} />
+        <Route path="/technology" element={<News apikey={apiKey} updateProgress = {updateProgress} key="technology" pageSize={10} country="in" category="technology" />} />
       </Routes>
     </BrowserRouter>
 

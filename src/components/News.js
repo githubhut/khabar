@@ -69,7 +69,7 @@ export default function News(props) {
         <div>
             <div className="container">
                 <div className="text-center my-3">
-                    <h1 style={{ marginTop: "90px" }}>Khabar- Top {capitalize(`${category}`)} Headlines</h1>
+                    <h1 style={{ marginTop: "90px" , color:'black'}}>Khabar- Top {capitalize(`${category}`)} Headlines</h1>
 
                     {loading && <Loading />}
                 </div>
