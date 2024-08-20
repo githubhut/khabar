@@ -47,5 +47,4 @@
   "engines": {
     "node": "20.15.1"
   },
-  "proxy": "https://api-khabar.vercel.app"
 }

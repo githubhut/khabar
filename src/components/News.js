@@ -24,7 +24,7 @@ export default function News(props) {
 
     const fetchData = async (p, isInitial = false) => {
 
-        let url = `/api/data?category=${category}&page=${p}&pageSize=${pageSize}`;
+        let url = `https://api-khabar.vercel.app/api/data?category=${category}&page=${p}&pageSize=${pageSize}`;
         try {
             setloading(true);
             updateProgress(0)
